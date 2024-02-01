@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Karla&display=swap" rel="stylesheet">
+        <title>Porfolio</title>
+    </head>
+    <body>
+
+        <style>
+            * {
+                font-family: 'Inconsolata', monospace;
+                font-family: 'Karla', sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 1px;
+                height: 1px;
+            }
+
+            ::-webkit-scrollbar-button {
+                width: 1px;
+                height: 1px;
+            }
+            body {
+                text-align: center;
+                margin: auto;
+                background-color: black;
+            }
+
+            #Logo {
+                position: fixed;
+                width: auto;
+                top: 30px;
+                text-align: center;
+                margin-left: 190px;
+                height: 50px;
+            }
+
+            .navigation {
+                position: fixed;
+                z-index: 4;
+                top: 100px;
+                background-color: transparent;
+                width: 100%;
+                height: 25px;
+            }
+            
+            #project-button {
+                position: relative;
+                color: white;
+                border: none;
+                margin-left: 30px;
+                background-color: transparent;
+            }
+
+            #horizontal-line {
+                position: relative;
+                top: 8px;
+                background-color: rgba(255, 255, 255, 0.264);
+                margin: auto;
+                width: 700px;
+                height: 1px;
+            }
+
+            .IT1 {
+                position: relative;
+                top: 200px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+                height: 550px;
+                background-color: rgb(0, 0, 0);
+            }
+
+            #P1 {
+                position: relative;
+                top: 25px;
+                left: 400px;
+            }
+
+            #IT1-p1 {
+                position: relative;
+                top: -360px;
+                left: -350px;
+                font-size: 50px;
+                color: white;
+            }
+
+            #IT1-p2 {
+                position: relative;
+                top: -410px;
+                left: -265px;
+                font-size: 30px;
+                color: rgb(162, 162, 162);
+            }
+
+            #IT1-WHITEBLOCK {
+                position: relative;
+                top: -425px;
+                left: -430px;
+                width: 100px; height: 45px;
+                margin:auto;
+                text-align: right;
+                font-size: 20px;
+                background-color: white;
+                color: black;
+            }
+            #IT1-BLACKBLOCK {
+                position: relative;
+                top: -470px;
+                left: -280px;
+                margin:auto;
+                width: 200px; height: 45px;
+                text-align: left;
+                font-size: 20px;
+                background-color: rgb(50, 46, 46);
+                color: rgb(255, 255, 255);
+            }
+
+            #IT1-BLOCKTXT {
+                position: relative;
+                top: -518px;
+                left: -400px;
+            }
+            #IT1-BBLOCKTXT {
+                position: relative;
+                top: -553px;
+                left: -310px;
+                color: white;
+            }
+
+            .IT2 {
+                position: relative;
+                top: 400px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+                height: 500px;
+                background-color: rgb(0, 0, 0);
+            }
+
+            #IT2-WHITEBLOCK {
+                position: relative;
+                top: 105px;
+                left: -230px;
+                width: 500px; height: 290px;
+                margin:auto;
+                font-size: 20px;
+                background-color: rgb(50, 46, 46);
+            }
+
+            #IT2-about {
+                position: relative;
+                top: 50px;
+                color: rgba(255, 255, 255, 0.537);
+                font-size: 15px;
+                left: -120px;
+                letter-spacing: 10px;
+            }
+
+            #IT2-about1 {
+                position: relative;
+                color: white;
+                top: 50px;
+                left: 50px;
+                width: 1000px;
+                font-size: 25px;
+                text-align: left;
+            }
+
+            #projects {
+                position: relative; top: 500px;
+            }
+            
+            .projects {
+                position: relative;
+                top: 600px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+                height: 850px;
+                background-color: black;
+            }
+            
+            #project-container {
+                position: relative;
+                top: 20px;
+                color: white;
+                font: 20px;
+                letter-spacing: 5px;
+            }
+
+            #project-horizontal-line {
+                position: relative;
+                top: 8px;
+                background-color: rgba(255, 255, 255, 0.264);
+                margin: auto;
+                width: 220px;
+                left: -2px;
+                height: 1px;
+            }
+
+            div.horizontal-scroll-personal1 {
+                position: relative;
+                top: -600px;
+                left: 220px;
+                height: auto;
+                max-height: 2000px;
+                width: 750px;
+                margin: auto;
+                background-color: rgb(0, 0, 0);
+                overflow-y: hidden;
+                overflow-x: scroll;
+                transform: rotate(-90deg) translateY(-250px);
+                white-space: nowrap;
+            }
+
+                #start-horizontal-personal {
+                    display: block;
+                    transform: rotate(90deg);
+                    position: relative;
+                    height: 710px;
+                    width: 100px;
+                    background-color: transparent;
+                }
+
+                #pepsi-container  {
+                    display: block;
+                    transform: rotate(90deg);
+                    position: relative;
+                    top: 10px;
+                    left: 11px;
+                    height: 600px;
+                    width: 700px;
+                    margin-bottom: 250px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: pepsi-container 15s linear infinite;
+                }
+
+                #pepsi-img {
+                    position: relative;
+                    width: 700px;
+                    height: auto;
+                }
+
+                #pepsi-title {
+                    position: relative;
+                    left: -300px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #pepsi-descrip {
+                    position: relative;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #pepsi-descrip1 {
+                    visibility: hidden;
+                }
+
+                #ferrari-container  {
+                    transform: rotate(90deg);
+                    display: block;
+                    position: relative;
+                    top: 34px;
+                    left: -20px;
+                    height: 600px;
+                    width: 700px;
+                    margin-left: 30px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: ferrari-container 15s linear infinite;
+                }
+
+                #ferrari-img {
+                    position: relative;
+                    width: 686px;
+                    height: auto;
+                }
+
+                #ferrari-title {
+                    position: relative;
+                    left: -268px;
+                    top: -10px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #ferrari-descrip {
+                    position: relative;
+                    top: -20px;
+                    left: 9px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #ferrari-descrip1 {
+                    visibility: hidden;
+                }
+
+                #edna-container  {
+                    display: block;
+                    position: relative;
+                    top: 300px;
+                    left: -20px;
+                    padding: 14px;
+                    width: 700px;
+                    height: 600px;
+                    color: white;
+                    margin-top: 245px;
+                    margin-left: 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    background-color: #333;
+                    transform: rotate(90deg);
+                    animation: edna-container 15s linear infinite;
+                }
+
+                #edna-img {
+                    position: relative;
+                    top: 10px;
+                    width: 686px;
+                    height: auto;
+                }
+
+                #edna-title {
+                    position: relative;
+                    left: -297px;
+                    top: 1px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #edna-descrip {
+                    position: relative;
+                    top: -2px;
+                    left: 7px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #edna-descrip1 {
+                    visibility: hidden;
+                }
+
+                #portal-container  {
+                    transform: rotate(90deg);
+                    display: block;
+                    position: relative;
+                    top: 570px;
+                    margin-top: 245px;
+                    left: -20px;
+                    height: 600px;
+                    width: 700px;
+                    margin-left: 30px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #portal-img {
+                    position: relative;
+                    top: -5px;
+                    width: 686px;
+                    height: auto;
+                }
+
+                #portal-title {
+                    position: relative;
+                    left: -130px;
+                    top: -28px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #portal-descrip {
+                    position: relative;
+                    top: -35px;
+                    left: 7px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #portal-descrip1 {
+                    visibility: hidden;
+                }
+
+                #row-container  {
+                    transform: rotate(90deg);
+                    display: block;
+                    position: relative;
+                    top: 570px;
+                    margin-top: 245px;
+                    left: -20px;
+                    height: 600px;
+                    width: 700px;
+                    margin-left: 30px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #row-img {
+                    position: relative;
+                    top: 10px;
+                    width: 686px;
+                    height: auto;
+                }
+
+                #row-title {
+                    position: relative;
+                    left: -308px;
+                    top: 10px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #row-descrip {
+                    position: relative;
+                    top: -10px;
+                    left: 7px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #row-descrip1 {
+                    visibility: hidden;
+                }
+
+                #last-horizontal-personal {
+                    display: block;
+                    transform: rotate(90deg);
+                    position: relative;
+                    height: 1226px;
+                    width: 100px;
+                    background-color: transparent;
+                } 
+
+            .group-project {
+                position: relative;
+                top: 550px;
+                height: 850px;
+            }          
+            
+            #group-container {
+                position: relative;
+                top: 20px;
+                color: white;
+                font: 20px;
+                letter-spacing: 5px;
+            }
+
+            #group-horizontal-line {
+                position: relative;
+                top: 8px;
+                background-color: rgba(255, 255, 255, 0.264);
+                margin: auto;
+                width: 220px;
+                left: -2px;
+                height: 1px;
+            }
+
+            div.horizontal-scroll-group1 {
+                position: relative;
+                top: -590px;
+                left: 220px;
+                height: auto;
+                max-height: 2000px;
+                width: 750px;
+                margin: auto;
+                background-color: rgb(0, 0, 0);
+                overflow-y: hidden;
+                overflow-x: scroll;
+                transform: rotate(90deg) translateY(250px);
+                white-space: nowrap;
+            }
+
+                #start-horizontal-group1 {
+                    display: block;
+                    transform: rotate(90deg);
+                    position: relative;
+                    height: 645px;
+                    width: 100px;
+                    background-color: transparent;
+                }
+
+                #starbox-container  {
+                    display: block;
+                    transform: rotate(-90deg);
+                    position: relative;
+                    top: 10px;
+                    left: 11px;
+                    height: 600px;
+                    width: 700px;
+                    margin-bottom: 250px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #starbox-img {
+                    position: relative;
+                    width: 700px;
+                    height: auto;
+                }
+
+                #starbox-title {
+                    position: relative;
+                    left: -270px;
+                    top: -10px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #starbox-descrip {
+                    position: relative;
+                    top: -20px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #starbox-descrip1 {
+                    visibility: hidden;
+                }
+
+                #math-container  {
+                    display: block;
+                    transform: rotate(-90deg);
+                    position: relative;
+                    top: 10px;
+                    left: 11px;
+                    height: 600px;
+                    width: 700px;
+                    margin-bottom: 250px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #math-img {
+                    position: relative;
+                    width: 660px;
+                    height: auto;
+                }
+
+                #math-title {
+                    position: relative;
+                    left: -282px;
+                    top: -10px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #math-descrip {
+                    position: relative;
+                    top: -22px;
+                    left: 20px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #math-descrip1 {
+                    visibility: hidden;
+                }
+
+                #poly-container  {
+                    display: block;
+                    transform: rotate(-90deg);
+                    position: relative;
+                    top: 10px;
+                    left: 11px;
+                    height: 600px;
+                    width: 700px;
+                    margin-bottom: 250px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #poly-img {
+                    position: relative;
+                    width: 700px;
+                    height: auto;
+                }
+
+                #poly-title {
+                    position: relative;
+                    left: -176px;
+                    top: -10px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #poly-descrip {
+                    position: relative;
+                    top: -20px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #poly-descrip1 {
+                    visibility: hidden;
+                }
+
+                #gymrat-container  {
+                    display: block;
+                    transform: rotate(-90deg);
+                    position: relative;
+                    top: 10px;
+                    left: 11px;
+                    height: 600px;
+                    width: 700px;
+                    margin-bottom: 250px;
+                    color: white;
+                    background-color: #333;
+                    text-align: center;
+                    padding: 14px;
+                    text-decoration: none;
+                    animation: portal-container 15s linear infinite;
+                }
+
+                #gymrat-img {
+                    position: relative;
+                    width: 700px;
+                    top: 20px;
+                    height: auto;
+                }
+
+                #gymrat-title {
+                    position: relative;
+                    left: -280px;
+                    top: 30px;
+                    font-size:30px;
+                    letter-spacing: 5px;
+                }
+
+                #gymrat-descrip {
+                    position: relative;
+                    top: 20px;
+                    font-size: 23px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #gymrat-descrip1 {
+                    visibility: hidden;
+                }
+
+                #last-horizontal-group1 {
+                    position: relative;
+                    height: 475px;
+                    width: 100px;
+                    background-color: transparent;
+                }
+            
+            #services {
+                position: relative; top: 750px;
+            }
+
+            .services {
+                position: relative;
+                /* top: 850px; */
+                top: 700px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+                height: 1490px;
+                background-color: black;
+            }
+            
+            #services-container {
+                position: relative;
+                top: 20px;
+                color: white;
+                font: 20px;
+                letter-spacing: 5px;
+            }
+
+            #services-horizontal-line {
+                position: relative;
+                top: 8px;
+                background-color: rgba(255, 255, 255, 0.264);
+                margin: auto;
+                width: 140px;
+                left: -2px;
+                height: 1px;
+            }
+
+            .full-stack {
+                position: relative;
+                width: 1000px;
+                height: 300px;
+                top: 30px;
+                margin: auto;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            #fullstack-title {
+                position: relative;
+                font-size: 30px;
+                color: white;
+                top: 60px;
+                left: 40px;
+                letter-spacing: 5px;            
+            }
+
+            #fullstack-descrip1 {
+                visibility: hidden;
+            }
+            #fullstack-descrip {
+                position: relative;
+                color: rgba(255, 255, 255, 0.33);
+                font-size: 25px;
+                top: 40px;
+                left: 330px;
+                text-align: left;
+            }
+
+            .web-developer {
+                position: relative;
+                width: 1000px;
+                height: 300px;
+                top: 30px;
+                margin: auto;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            #web-title {
+                position: relative;
+                font-size: 30px;
+                color: white;
+                top: 60px;
+                left: -28px;
+                letter-spacing: 5px;            
+            }
+
+            #web-descrip1 {
+                visibility: hidden;
+            }
+
+            #web-descrip {
+                position: relative;
+                color: rgba(255, 255, 255, 0.33);
+                font-size: 25px;
+                top: 40px;
+                left: 330px;
+                text-align: left;
+            }
+
+            .application-developer {
+                position: relative;
+                width: 1000px;
+                height: 300px;
+                top: 30px;
+                margin: auto;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            #application-title {
+                position: relative;
+                font-size: 30px;
+                color: white;
+                top: 60px;
+                left: 49px;
+                letter-spacing: 5px;            
+            }
+
+            #application-descrip1 {
+                visibility: hidden;
+            }
+
+            #application-descrip {
+                position: relative;
+                color: rgba(255, 255, 255, 0.33);
+                font-size: 25px;
+                top: 40px;
+                left: 330px;
+                text-align: left;
+            }
+
+            .game-developer {
+                position: relative;
+                width: 1000px;
+                height: 300px;
+                top: 30px;
+                margin: auto;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            #game-title {
+                position: relative;
+                font-size: 30px;
+                color: white;
+                top: 60px;
+                left: -14px;
+                letter-spacing: 5px;            
+            }
+
+            #game-descrip1 {
+                visibility: hidden;
+            }
+
+            #game-descrip {
+                position: relative;
+                color: rgba(255, 255, 255, 0.33);
+                font-size: 25px;
+                top: 40px;
+                left: 330px;
+                text-align: left;
+            }
+
+            .footer {
+                position: relative;
+                top: 750px;
+                height: 200px;
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                background-color: #333;
+            }
+
+            #facebook {
+                display: inline;
+                position: relative;
+                top: 75px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            #ig {
+                display: inline;
+                position: relative;
+                top: 79px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            #link {
+                display: inline;
+                position: relative;
+                top: 75px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            #tiktok {
+                display: inline;
+                position: relative;
+                top: 85px;
+                left: -10px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 1200px) {
+
+                body {
+                    background-color: rgb(0, 0, 0);
+                }
+
+                .IT1 {
+                    position: relative;
+                    top: 200px;
+                    margin: auto;
+                    width: auto;
+                    text-align: center;
+                    height: 550px;
+                    background-color: rgb(0, 0, 0);
+                }
+
+                #P1 {
+                    position: relative;
+                    top: 200px;
+                    left: 0px;
+                } 
+
+                #IT1-p1 {
+                    position: relative;
+                    top: -560px;
+                    left: 0px;
+                }
+
+                #IT1-p2 {
+                    position: relative;
+                    top: -600px;
+                    left: 0px;
+                }
+
+                #IT1-WHITEBLOCK {
+                    position: relative;
+                    top: -600px;
+                    left: -100px;
+                }
+
+                #IT1-BLACKBLOCK {
+                    position: relative;
+                    top: -645px;
+                    left: 50px;
+                }
+                
+                #IT1-BLOCKTXT {
+                    position: relative;
+                    top: -694px;
+                    left: -70px;
+                    color: rgb(0, 0, 0);
+                }
+
+                #IT1-BBLOCKTXT {
+                    position: relative;
+                    top: -729px;
+                    left: 20px;
+                }
+
+                #IT2-WHITEBLOCK {
+                    position: relative;
+                    left: 0px;
+                    width: 390px; height: 450px;
+                }
+
+                #IT2-about {
+                    position: relative;
+                    left: 0px;
+                }
+
+                #IT2-about1 {
+                    position: relative;
+                    color: white;
+                    top: 50px;
+                    left: 60px;
+                    width: 300px;
+                    font-size: 20px;
+                }
+
+                .projects {
+                    position: relative;
+                    top: 550px;
+                    height: 850px;
+                }
+
+                #projects {
+                    position: relative;
+                    top: 400px;
+                }
+
+                div.horizontal-scroll-personal1 {
+                    position: relative;
+                    top: -680px;
+                    left: 220px;
+                    height: auto;
+                    max-height: 2000px;
+                    width: 600px;
+                    margin: auto;
+                    background-color: rgb(0, 0, 0);
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    transform: rotate(-90deg) translateY(-250px);
+                    white-space: nowrap;
+                }
+
+                /* #start-horizontal-personal {
+                    display: block;
+                    position: relative;
+                    height: 710px;
+                    width: 1000px;
+                    background-color: transparent;
+                } */
+
+                #pepsi-container  {
+                    position: relative;
+                    top: 0px;
+                    left: 88px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #pepsi-img {
+                    position: relative;
+                    width: 400px;
+                    height: auto;
+                }
+
+                #pepsi-title {
+                    position: relative;
+                    left: -150px;
+                    font-size:30px;
+                }
+
+                #pepsi-descrip {
+                    visibility: hidden;
+                }
+
+                #pepsi-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -100px;
+                    font-size: 20px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #ferrari-container  {
+                    position: relative;
+                    top: -290px;
+                    left: 58px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #ferrari-img {
+                    position: relative;
+                    width: 388px;
+                    height: auto;
+                }
+
+                #ferrari-title {
+                    position: relative;
+                    left: -120px;
+                    top: -2px;
+                    font-size:30px;
+                }
+                
+                #ferrari-descrip {
+                    visibility: hidden;
+                }
+                
+                #ferrari-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -133px;
+                    left: 9px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #edna-container  {
+                    position: relative;
+                    top: -330px;
+                    left: 58px;
+                    padding: 14px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #edna-img {
+                    position: relative;
+                    top: 0px;
+                    width: 405px;
+                    height: auto;
+                }
+
+                #edna-title {
+                    position: relative;
+                    left: -155px;
+                    top: -2px;
+                    font-size:30px;
+                }
+
+                #edna-descrip {
+                    visibility: hidden;
+                }
+
+                #edna-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -112px;
+                    left: 1px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #portal-container  {
+                    position: relative;
+                    top: -350px;
+                    left: 58px;
+                    padding: 14px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #portal-img {
+                    position: relative;
+                    top: 0px;
+                    width: 380px;
+                    height: auto;
+                }
+
+                #portal-title {
+                    position: relative;
+                    left: -30px;
+                    top: 12px;
+                    font-size:20px;
+                }
+
+                #portal-descrip {
+                    visibility: hidden;
+                }
+
+                #portal-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -112px;
+                    left: 9px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #row-container  {
+                    position: relative;
+                    top: -350px;
+                    left: 58px;
+                    padding: 14px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #row-img {
+                    position: relative;
+                    top: 20px;
+                    width: 380px;
+                    height: auto;
+                }
+
+                #row-title {
+                    position: relative;
+                    left: -160px;
+                    top: 20px;
+                    font-size:20px;
+                }
+
+                #row-descrip {
+                    visibility: hidden;
+                }
+
+                #row-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -112px;
+                    left: 9px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #last-horizontal-personal {
+                    position: relative;
+                    height: 400px;
+                    width: 100px;
+                    background-color: transparent;
+                }
+
+                .group-project {
+                    position: relative;
+                    top: 400px;
+                    margin: auto;
+                    width: auto;
+                    text-align: center;
+                    height: 850px;
+                    background-color: rgb(0, 0, 0);
+                }   
+
+                div.horizontal-scroll-group1 {
+                    position: relative;
+                    top: -680px;
+                    left: 220px;
+                    height: auto;
+                    max-height: 2000px;
+                    width: 600px;
+                    margin: auto;
+                    background-color: rgb(0, 0, 0);
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    transform: rotate(90deg) translateY(250px);
+                    white-space: nowrap;
+                }
+
+                #starbox-container  {
+                    position: relative;
+                    top: 100px;
+                    left: 88px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #starbox-img {
+                    position: relative;
+                    width: 400px;
+                    height: auto;
+                }
+
+                #starbox-title {
+                    position: relative;
+                    left: -119px;
+                    font-size:30px;
+                }
+
+                #starbox-descrip {
+                    visibility: hidden;
+                }
+
+                #starbox-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -130px;
+                    font-size: 20px;
+                    color: rgba(255, 255, 255, 0.33);
+                    text-align: left;
+                }
+
+                #math-container  {
+                    position: relative;
+                    top: -180px;
+                    left: 88px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #math-img {
+                    position: relative;
+                    width: 388px;
+                    height: auto;
+                }
+
+                #math-title {
+                    position: relative;
+                    left: -148px;
+                    top: -17px;
+                    font-size:30px;
+                }
+                
+                #math-descrip {
+                    visibility: hidden;
+                }
+                
+                #math-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -160px;
+                    left: 7px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #poly-container  {
+                    position: relative;
+                    top: -460px;
+                    left: 88px;
+                    padding: 14px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #poly-img {
+                    position: relative;
+                    top: 0px;
+                    width: 405px;
+                    height: auto;
+                }
+
+                #poly-title {
+                    position: relative;
+                    left: -46px;
+                    top: -2px;
+                    font-size:25px;
+                }
+
+                #poly-descrip {
+                    visibility: hidden;
+                }
+
+                #poly-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -82px;
+                    left: 1px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                }
+
+                #gymrat-container  {
+                    position: relative;
+                    top: -460px;
+                    left: 88px;
+                    padding: 14px;
+                    height: 520px;
+                    width: 400px;
+                }
+
+                #gymrat-img {
+                    position: relative;
+                    top: 20px;
+                    width: 405px;
+                    height: auto;
+                }
+
+                #gymrat-title {
+                    position: relative;
+                    left: -140px;
+                    top: 20px;
+                    font-size:25px;
+                }
+
+                #gymrat-descrip {
+                    visibility: hidden;
+                }
+
+                #gymrat-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    top: -82px;
+                    left: 1px;
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.33);
+                } 
+                
+                #last-horizontal-group1 {
+                    position: relative;
+                    height: 0px;
+                    width: 100px;
+                    background-color: transparent;
+                }
+
+                #services {
+                    position: relative; top: 150px;
+                }
+
+                .services {
+                    position: relative;
+                    top: 300px;
+                }
+
+                .full-stack {
+                    position: relative;
+                    width: 400px;
+                    height: 400px;
+                }
+
+                #fullstack-title {
+                    position: relative;
+                    color: white;
+                    left: 0px;
+                }
+
+                #fullstack-descrip {
+                    visibility: hidden;
+                }
+
+                #fullstack-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    color: rgba(255, 255, 255, 0.33);
+                    font-size: 20px;
+                    top: -230px;
+                    width: 340px;
+                    left: 30px;
+                    text-align: center;
+                }
+
+                .web-developer {
+                    position: relative;
+                    width: 400px;
+                    height: 400px;
+                }
+
+                #web-title {
+                    position: relative;
+                    color: white;
+                    left: 0px;           
+                }
+
+                #web-descrip {
+                    visibility: hidden;
+                }
+
+                #web-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    color: rgba(255, 255, 255, 0.33);
+                    font-size: 20px;
+                    top: -200px;
+                    width: 340px;
+                    left: 30px;
+                    text-align: center;
+                }
+
+                .application-developer {
+                    position: relative;
+                    width: 400px;
+                    height: 400px;
+                }
+
+                #application-title {
+                    position: relative;
+                    color: white;
+                    left: 0px;            
+                }
+
+                #application-descrip {
+                    visibility: hidden;
+                }
+
+                #application-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    color: rgba(255, 255, 255, 0.33);
+                    font-size: 20px;
+                    top: -230px;
+                    width: 340px;
+                    left: 30px;
+                    text-align: center;
+                }
+
+                .game-developer {
+                    position: relative;
+                    width: 400px;
+                    height: 400px;
+                }
+
+                #game-title {
+                    position: relative;
+                    color: white;
+                    left: 0px;            
+                }
+
+                #game-descrip {
+                    visibility: hidden;
+                }
+
+                #game-descrip1 {
+                    position: relative;
+                    visibility: visible;
+                    color: rgba(255, 255, 255, 0.33);
+                    font-size: 20px;
+                    top: -230px;
+                    width: 340px;
+                    left: 30px;
+                    text-align: center;
+                }
+
+            }
+
+            @keyframes pepsi-container {
+                from {top: 0px;}
+                to {top: -3100px;}
+            }
+
+            @keyframes ferrari-container {
+                from {top: 0px;}
+                to {top: -3100px;}
+            }
+
+            @keyframes edna-container {
+                from {top: 0px;}
+                to {top: -3100px;}
+            }
+
+            @keyframes portal-container {
+                from {top: 0px;}
+                to {top: -3100px;}
+            }
+
+            @keyframes row-container {
+                from {top: 0px;}
+                to {top: -3100px;}
+            }
+
+            @keyframes starbox-container {
+                from {top: 0px;}
+                to {top: -2600px;}
+            }
+
+            @keyframes math-container {
+                from {top: 0px;}
+                to {top: -2600px;}
+            }
+
+            @keyframes poly-container {
+                from {top: 0px;}
+                to {top: -2600px;}
+            }
+
+        </style>
+
+        <section class="navigation">
+            <img id="Logo" src="img-resources/Logo.png">
+            <a href="#projects"><button id="project-button">PROJECTS</button></a>
+            <a href="#services"><button id="project-button">SERVICES</button></a>
+            <a href="#bio"><button id="project-button">ABOUT</button></a>
+            <a href="#facebook"><button id="project-button">LINKS</button></a>
+            <div id="horizontal-line"></div>
+        </section>
+        <p id="bio" style="position: relative; top: -30px; color: white;"></p>
+        <section class="IT1" id="IT1">
+            <img id="P1" src="img-resources/P1.png">
+            <p id="IT1-p1">MY NAME IS</p>
+            <p id="IT1-p2">ROMERO, JUSTINE LOUISE, VIDAL</p>
+            <div id="IT1-WHITEBLOCK"></div>
+            <div id="IT1-BLACKBLOCK"></div>
+            <p id="IT1-BLOCKTXT">FULL</p>
+            <p id="IT1-BBLOCKTXT">STACK DEVELOPER</p>
+        </section>
+        <section class="IT2">
+            <div id="IT2-WHITEBLOCK">
+                <p id="IT2-about">ABOUT ME</p>
+                <p id="IT2-about1"> AS A SEASONED FULL-STACK DEVELOPER IN THE IT INDUSTRY, I LEVERAGE MY COMPREHENSIZE SKILLS IN BOTH FRON-END AND BACK-END TECHNOLOGIES TO CREATE INNOVATIVE AND EFFICIENT SOLUTIONS THAT DRIVE SEAMLESS USER EXPERIENCES AND CONTRIBUTE TO THE SUCCESS OF DIVERSE PROJECT</p>
+            </div>
+            <div id="IT2-BLACKBLOCK"></div>
+        </section>
+        <p id="projects"></p>
+        <section class="projects">
+            <p id="project-container">PERSONAL PROJECT</p>
+            <div id="project-horizontal-line"></div>
+            <div class="horizontal-scroll-personal1" id="horizontal-scroll-personal1">
+                <div id="start-horizontal-personal"></div>
+                <div id="pepsi-container">
+                    <img id="pepsi-img" src="img-resources/pepsi.jpg">
+                    <p id="pepsi-title">PEPSI</p>
+                    <p id="pepsi-descrip">I developed this software with the aim of accelerating Pepsi's<br> 
+                        transactions and data exchanges. Through this software, investors<br> 
+                        and shareholders will likely be attracted to purchasing stocks.
+                    </p>
+                    <p id="pepsi-descrip1">I developed this software with the aim of<br>
+                        accelerating Pepsi's transactions and data<br>
+                        exchanges. Through this software, investors<br>
+                        and shareholders will likely be attracted to<br>
+                        purchasing stocks.
+                    </p>
+                </div>
+                <div id="ferrari-container">
+                    <img id="ferrari-img" src="img-resources/ferrari.jpg">
+                    <p id="ferrari-title">FERRARI</p>
+                    <p id="ferrari-descrip">This software was coded using the Java language and serves as a<br>
+                        tool for users/collectors to determine the optimal upgrade and<br>
+                        color for their cars. Additionally, it provides a platform for users to<br>
+                        explore and connect with other car collectors within a community.
+                    </p>
+                    <p id="ferrari-descrip1">This software was coded using the Java<br> 
+                        language and serves as a tool for users<br>
+                        /collectors to determine the optimal upg-<br>
+                        rade and color for their cars. Additionally, it<br>
+                        provides a platform for users to explore and<br>
+                        connect with other car collectors within a<br>
+                        community.
+                    </p>
+                </div>
+                <div id="edna-container">
+                    <img id="edna-img" src="img-resources/Edna.png">
+                    <p id="edna-title">EDNA</p>
+                    <p id="edna-descrip">This game development project utilized Unity and the C#<br>
+                        programming language. The mobile 2d game includes two distinct<br>
+                        categories: story mode and survival mode.
+                    </p>
+                    <p id="edna-descrip1">This game development project utilized<br>
+                        Unity and the C# programming language.<br>
+                        The mobile 2d game includes two<br>
+                        distinct categories: story mode and<br>
+                        survival mode.
+                    </p>
+                </div>
+                <div id="portal-container">
+                    <img id="portal-img" src="img-resources/portal.png">
+                    <p id="portal-title">PHINMA PORTAL SYSTEM</p>
+                    <p id="portal-descrip">This software is designed to cater to the needs of both students<br>
+                        and employees of Phinma University of Pangasinan. It facilitates<br>
+                        transactions through an AI assistant center, allowing users to<br>
+                        review their payment history and payment methods.
+                    </p>
+                    <p id="portal-descrip1">This software is designed to cater to the<br>
+                        needs of both students and employees of<br>
+                        Phinma University of Pangasinan. It<br>
+                        facilitates transactions through an AI<br>
+                        assistant center, allowing users to<br>
+                        review their payment history and payment<br>
+                        methods.
+                    </p>
+                </div>
+                <div id="row-container">
+                    <img id="row-img" src="img-resources/row.png">
+                    <p id="row-title">ROW</p>
+                    <p id="row-descrip">This application is designed for communication purposes and is<br>
+                        currently undergoing further development to assist individuals<br>
+                        facing financial challenges in acquiring internet access or<br>
+                        transferring data.
+                    </p>
+                    <p id="row-descrip1">This application is designed for<br> 
+                        communication purposes and is currently<br> undergoing further
+                        development to assist<br> individuals facing financial
+                        challenges in<br> acquiring internet access or transferring<br> data.
+                    </p>
+                </div>
+                <div id="last-horizontal-personal"></div>
+            </div>
+        </section>
+        <section class="group-project">
+            <p id="group-container">GROUP PROJECT</p>
+            <div id="group-horizontal-line"></div>
+            <div class="horizontal-scroll-group1" id="horizontal-scroll-group1">
+                <div id="start-horizontal-group1"></div>
+                <div id="starbox-container">
+                    <img id="starbox-img" src="img-resources/starbox.jpg">
+                    <p id="starbox-title">STARBOX</p>
+                    <p id="starbox-descrip">Me and my L2K team-mate offer this software<br>
+                        for the people who need to order virtually with fast and efficient<br>
+                        online service crew to deliever quality products.
+                    </p>
+                    <p id="starbox-descrip1">Me and my L2K team-mate offer this<br>
+                        software for the people who need to order<br>
+                        virtually with fast and efficient online service<br>
+                        crew to deliever quality products.
+                    </p>
+                </div>
+                <div id="math-container">
+                    <img id="math-img" src="img-resources/math.png">
+                    <p id="math-title">MATH</p>
+                    <p id="math-descrip">Our team gather a useful software for those people<br>
+                        who wanna learn and having struggle with mathematics.<br>
+                        using this application you'll gain knowledge and solve<br>
+                        problem easy.
+                    </p>
+                    <p id="math-descrip1">Our team gather a useful software for those<br>
+                        people who wanna learn and having struggle<br> 
+                        with mathematics. using this application<br>
+                        you'll gain knowledge and solve problem<br>
+                        easy.
+                    </p>
+                </div>
+                <div id="poly-container">
+                    <img id="poly-img" src="img-resources/poly.png">
+                    <p id="poly-title">POLYGOOSE FRENZY</p>
+                    <p id="poly-descrip">PolyGoose frenzy is a both friendly and war shooting game<br>
+                        we're users can spead time enjoying a very basic pop googse.
+                    </p>
+                    <p id="poly-descrip1">PolyGoose frenzy is a both friendly and war<br>
+                        shooting game we're users can spead time<br>
+                        enjoying a very basic pop googse.
+                    </p>
+                </div>
+                <div id="gymrat-container">
+                    <img id="gymrat-img" src="img-resources/gymrat.png">
+                    <p id="gymrat-title">GYMRAT</p>
+                    <p id="gymrat-descrip">The innovative fitness app streamlining your workout journey.<br>
+                        Our user-friendly platform simplifies personalized plans with a<br>
+                        quick form capturing your fitness level, goals, and preferences.
+                    </p>
+                    <p id="gymrat-descrip1">The innovative fitness app streamlining<br>
+                        your workout journey. Our user-friendly<br>
+                        platform simplifies personalized plans with<br>
+                        a quick form capturing your fitness level,<br> 
+                        goals, and preferences.
+                    </p>
+                </div>
+                <div id="last-horizontal-group1"></div>
+            </div>
+        </section>
+        <p id="services"></p>
+        <section class="services">
+            <p id="services-container">SERVICES</p>
+            <div id="services-horizontal-line"></div>
+            <div class="full-stack">
+                <p id="fullstack-title">FULL-STACK DEVELOPER</p>
+                <p id="fullstack-descrip">Unlock the full spectrum of digital possibilities with<br>
+                    our dedicated full-stack developer service, where<br>
+                    expertise meets innovation to craft seamless, end<br>
+                    -to-end solutions for your unique business<br>
+                    challenges.
+                </p>
+                <p id="fullstack-descrip1">Unlock the full spectrum of digital possibilities with
+                    our dedicated full-stack developer service, where
+                    expertise meets innovation to craft seamless, end
+                    -to-end solutions for your unique business
+                    challenges.
+                </p>
+            </div>
+            <div class="web-developer">
+                <p id="web-title">WEB DEVELOPER</p>
+                <p id="web-descrip">Elevate your online presence with my full-stack<br>
+                    web development services, seamlessly<br>
+                    combining front-end and back-end expertise<br>
+                    for a robust and responsive digital experience.
+                </p>
+                <p id="web-descrip1">Elevate your online presence with my full-stack
+                    web development services, seamlessly
+                    combining front-end and back-end expertise
+                    for a robust and responsive digital experience.
+                </p>
+            </div>
+            <div class="application-developer">
+                <p id="application-title">APPLICATION DEVELOPER</p>
+                <p id="application-descrip">Elevate your business potential with our full-stack<br>
+                    application development service, combining<br>
+                    cutting-edge technology and seamless integration<br>
+                    to deliver powerful, user-friendly solutions tailored<br>
+                    to your unique needs.
+                </p>
+                <p id="application-descrip1">Elevate your business potential with our full-stack
+                    application development service, combining
+                    cutting-edge technology and seamless integration
+                    to deliver powerful, user-friendly solutions tailored
+                    to your unique needs.
+                </p>
+            </div>
+            <div class="game-developer">
+                <p id="game-title">GAME DEVELOPER</p>
+                <p id="game-descrip">Empower your gaming vision with my<br>
+                    comprehensive full-stack game development<br>
+                    service, where creativity meets technical prowess to<br>
+                    bring immersive and captivating gaming experiences<br>
+                    to life.
+                </p>
+                <p id="game-descrip1">Empower your gaming vision with my
+                    comprehensive full-stack game development
+                    service, where creativity meets technical prowess tool
+                    bring immersive and captivating gaming experiences
+                    to life.
+                </p>
+            </div>
+        </section>
+        <section class="footer">
+            <a href="https://www.facebook.com/ImLost0/"><button id="facebook"><img src="img-resources/fb.png" style="width: 30px; height: auto; background-color: transparent;"></button></a>
+            <a href="https://www.instagram.com/_ruviro/"><button id="ig"><img src="img-resources/ig.png" style="width: 38px; height: auto; background-color: transparent;"></button></a>
+            <a href="https://www.linkedin.com/in/justine-romero-1a1044282/"><button id="link"><img src="img-resources/link.png" style="width: 30px; height: auto; background-color: transparent;"></button></a>
+            <a href="https://www.tiktok.com/@rvd.z?lang=en"><button id="tiktok"><img src="img-resources/tiktok.webp" style="width: 50px; height: auto; background-color: transparent;"></button></a>
+        </section>
+    </body>
+</html>
